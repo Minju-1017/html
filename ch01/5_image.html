@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- img 태그는 닫는 태그가 없다. 보통 웹에서는 상대 경로를 쓴다. -->
+
+<!-- 상대 경로 -->
+    <img src="./3.jpeg" width="300px"> <!-- 동등 레벨 -->
+    <!-- <img src="3.jpeg" width="300px"> 동등 레벨 - 위와 동일 -->
+    <img src="./image/1.jpg" width="300px"> <!-- 하위 레벨-->
+    <img src="../image/2.jpg" width="300px"> <!-- 상위 레벨(한단계 위)-->
+
+<!-- 절대 경로 -->
+    <img src="/ch01/image/1.jpg" width="300px">
+</body>
+</html>
