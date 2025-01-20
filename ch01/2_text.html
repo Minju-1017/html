@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!--html5의 규칙을 준수하는 파일이다라는 명시라 꼭 있어야함-->
+<html lang="en">
+<head> <!--head 영역에서 title만 화면에 보이고, 나머지는 body 영역에서 보여준다-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <!--화면에 보임-->
+</head>
+<body>
+    
+<!-- 자주 사용되는 단축키
+    Ctrl + Shift + k : 한줄 삭제
+    Alt + 방향키(위, 아래) : 한줄 이동
+    Alt + Shift + 방향키(위, 아래) : 한줄 위 또는 아래 복붙
+    Ctrl + f : 문서내에서 찾기
+-->
+
+    <h1>제목입니다.</h1>
+    <br><h2>제목입니다.</h2>
+    <br><h3>제목입니다.</h3>
+    <br><h4>제목입니다.</h4>
+    <br><h5>제목입니다.</h5>
+    <br><h6>제목입니다.</h6> 
+
+    <hr> <!-- 가로 선 -->
+
+<!-- 태그 안에서 공백은 1칸만 허용된다. 2째줄과 3, 4째줄의 결과가 동일. 공백은 &nbsp;로 쓴다. -->
+    <h1>제목입니다.</h1> 
+    <h1>제 목입니다.</h1> 
+    <h1>제  목입니다.</h1> 
+    <h1>제   목입니다.</h1> 
+    <h1>제&nbsp;&nbsp;&nbsp;&nbsp;목입니다.</h1> 
+
+    <hr>
+
+    <p>
+        HTML (Hypertext Markup Language,하이퍼텍스트 마크업 언어)는 프로그래밍 언어는 아니고, 우리가 보는 웹페이지가 어떻게 구조화되어 있는지 브라우저로 하여금 알 수 있도록 하는 마크업 언어입니다. 이는 개발자로 하여금 복잡하게도 간단하게도 프로그래밍 할 수 있습니다. HTML은 elements로 구성되어 있으며, 이들은 적절한 방법으로 나타내고 실행하기 위해 각 컨텐츠의 여러 부분들을 감싸고 마크업 합니다. tags 는 웹 상의 다른 페이지로 이동하게 하는 하이퍼링크 내용들을 생성하거나, 단어를 강조하는 등의 역할을 합니다. 예를들어, 다음의 내용을 봅시다.
+    </p>
+
+    <hr>
+
+<!-- p 태그는 bolck label 태그로, 한줄 전체에 적용된다. -->
+    <p style="background-color: aqua;">HTML</p>
+    <p style="background-color: aqua;">HTML</p>
+    <p style="background-color: aqua;">HTML</p>
+
+    <hr>
+
+<!-- span 태그는 inline label 태그로, 태그로 감싸고 있는 영역에만 적용된다. -->
+    <span style="background-color: aqua;">HTML</span>
+    <span style="background-color: aqua;">HTML</span>
+    <span style="background-color: aqua;">HTML</span>
+
+    <hr>
+
+<!-- 우리나라에서는 잘 사용되지 않는 태그. 인용구에 잘 쓰임 -->
+    <blockquote>
+        HTML (Hypertext Markup Language,하이퍼텍스트 마크업 언어)는 프로그래밍 언어는 아니고, 우리가 보는 웹페이지가 어떻게 구조화되어 있는지 브라우저로 하여금 알 수 있도록 하는 마크업 언어입니다. 이는 개발자로 하여금 복잡하게도 간단하게도 프로그래밍 할 수 있습니다. HTML은 elements로 구성되어 있으며, 이들은 적절한 방법으로 나타내고 실행하기 위해 각 컨텐츠의 여러 부분들을 감싸고 마크업 합니다. tags 는 웹 상의 다른 페이지로 이동하게 하는 하이퍼링크 내용들을 생성하거나, 단어를 강조하는 등의 역할을 합니다. 예를들어, 다음의 내용을 봅시다.
+    </blockquote>
+
+    <hr>
+
+<!-- 사실을 강조하기 위한 태그와 그냥 효과를 주기 위한 태그가 있다. 결과는 동일해보임 -->
+    <p><strong>HTML</strong>은 무엇인가?</p> <!-- 사실을 강조하는 의미로 사용 -->
+    <p><b>HTML은 무엇인가?</b></p> <!-- 그냥 효과로 사용 -->
+
+    <br><em>italy</em> <!-- 의미로 사용 -->
+    <br><i>italy</i> <!-- 효과로 사용 --> 
+
+    <br><mark>mark</mark> <!-- 형광펜 --> 
+
+    <br>H<sub>2</sub>O
+    <br>E=MC<sup>2</sup>
+    <br><s>30,000원</s> -> 10,000원
+    <br>이제는 <u>밑줄</u> 입니다.
+
+<!--
+    abbr : 점섬으로 밑줄을 긋고, 위에 마우스오버 하면 메모를 보여준다.
+    p 태그 안에 span : 강조 하고 싶은 문자에 span 태그로 감싸고, css 효과를 줄 수 있다.
+-->
+    <p>
+        천고에 청춘의 아니더면, <abbr title="Bule House">BH</abbr> 그들은 말이다. 따뜻한 목숨이 아름답고 피가 아니다. 만물은 인생의 없으면 이것이다.
+		그들의 것이다.보라, 끝까지 새 없는 봄날의 날카로우나 속잎나고, 황금시대다. 밝은 대중을 미묘한 보내는 보배를 광야에서
+		바이며, 아니다. <q cite="www.naver.com">청춘</q>에서만 눈에 맺어, 있을 두기 인간의 노래하며 만물은 반짝이는 힘있다. 뼈 때까지 같으며, 우리는
+		타오르고 아니더면, 끓는다. 별과 품에 붙잡아 이상의 청춘의 열매를 봄바람이다. 목숨이 대중을 스며들어 날카로우나 충분히 이는
+		봄날의 힘있다. 동산에는 <span>눈에</span> 얼마나 어디 이것이다. 부패를 원대하고, 따뜻한 철환하였는가?
+    </p>
+
+</body> 
+</html>
