@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr, td {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<!-- 
+td의 너비(width)는 맨 윗줄만 넣으면 동일하게 맞춰준다. 
+ width를 생략하면 알아서 남은 영역만큼 잡아준다. 여러개를 생략하면 균등하게 나눠서
+ -->
+    <table width="100%">
+        <thead>
+            <tr>
+                <td width="50px">번호</td>
+                <td>이름</td>
+                <td width="200px">아이디</td>
+                <td width="500px">주소</td>
+                <td width="300px">상세주소</td>
+                <td width="200px">모바일</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10</td>
+                <td>장원영</td>
+                <td colspan="2">aaa@naver.com</td> <!-- colspan을 2로 한다는 것은, 옆의 td(가로)를 합치겠다는 것이다. 
+                                                        그래서 바로 아래 td 주석 처리 필요-->
+                <!-- <td>서울특별시 성동구 동일로</td> -->
+                <td rowspan="2">123-456</td> <!-- rowspan은 아랫줄(세로)을 합치겠다는 것이므로 다음줄의 같은 위치의 td를 주석처리 해야한다. -->
+                <td>010-999-9999</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>홍길동</td>
+                <td>123@gmail.com</td>
+                <td>서울특별시 강남구 테헤란로</td>
+                <!-- <td>123-456</td> -->
+                <td>010-999-9999</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+<!-- thead, tbody, tfoot(합계 같은 라인에 쓰이는 태그)은 생략할 수 있다. 위와 아래 결과 동일 -->
+    <table width="100%">
+            <tr>
+                <td width="50px">번호</td>
+                <td>이름</td>
+                <td width="200px">아이디</td>
+                <td width="500px">주소</td>
+                <td width="300px">상세주소</td>
+                <td width="200px">모바일</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>장원영</td>
+                <td>aaa@naver.com</td>
+                <td>서울특별시 성동구 동일로</td>
+                <td>123-456</td>
+                <td>010-999-9999</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>홍길동</td>
+                <td>123@gmail.com</td>
+                <td>서울특별시 강남구 테헤란로</td>
+                <td>123-456</td>
+                <td>010-999-9999</td>
+            </tr>
+    </table>
+</body>
+</html>
