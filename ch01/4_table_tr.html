@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table, tr, td {
+            border : 1px solid brown;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table width="100%">
+        <tr>
+            <td width="200px">번호</td>
+            <td width="200px">이름</td>
+            <td>제목</td>
+            <td width="500px">내용</td>
+            <td width="200px">날짜</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td colspan="2">김철수</td>
+            <!-- <td>제목1</td> -->
+            <td rowspan="2">가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하</td>
+            <td>2025-10-10</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>최영희</td>
+            <td>제목2</td>
+            <td>가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하</td>
+            <!-- <td>2025-10-11</td> -->
+        </tr>
+    </table>    
+</body>
+</html>
