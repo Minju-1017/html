@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+    form 태그는 한 화면에 여러개 들어갈 수 있으나, 보통은 컨트롤이 힘들어 1개만 사용한다.
+    화면에 영향을 주지 않으므로 body 하위 전체를 form으로 감싸도 된다.
+
+    * form 속성
+      1. action : 어디로 보낼 것인가?
+      2. type : get - url에 붙여서 보내기
+                post - 숨겨서 보내기
+-->
+
+    <form method="post" action="">
+        <table>
+            <tr>
+                <td width="100px">이름</td>
+                <td><input type="text" placeholder="이름을 입력해 주세요" maxlength="5"></td>
+            </tr>
+            <tr>
+                <td width="100px">아이디<span style="color : red;">*</span></td>
+                <td><input type="text" placeholder="아이디를 입력해 주세요"></td>
+            </tr>
+        </table>
+
+<!-- button, input 둘 다 버튼을 만들 수 있다. button 태그가 더 많이 쓰임 -->
+<!-- 클릭 시 입력한 데이터 모두 action을 통해 전송 -->
+        <br>button: <button type="button|submit|reset">here</button>
+        <br>button: <input type="button" value="누르시오">
+        <br>submit: <input type="submit"> <!-- 동일태그 = <button type="button|submit"> -->
+
+        <br>checkbox: <input type="checkbox"> <!-- 여러개 선택 가능 -->
+        <br>radio: <input type="radio"> <!-- 1개만 선택 가능 -->
+
+        <br>date: <input type="date"> <!-- 잘 사용 안됨(모양 변경 안됨). 가장 많이 쓰이는건 jquery의 Datepicker -->
+        <br>datetime: <input type="datetime">
+        <br>datetime-local: <input type="datetime-local">
+        <br>month: <input type="month"> <!-- 대체할 것이 없음 -->
+        <br>week: <input type="week">
+        <br>time: <input type="time">
+        
+        <br>email: <input type="email">
+        <br>number: <input type="number">
+        <br>password: <input type="password"> <!-- 많이 쓰임 -->
+        <br>tel: <input type="tel">
+        <br>text: <input type="text"> <!-- 거의 이것만 사용 -->
+        <br>url: <input type="url">
+        <br>search: <input type="search">
+        <br>image: <input type="image">
+
+        <br>color: <input type="color">
+        <br>file: <input type="file">
+        <br>range: <input type="range">
+        
+        <br>hidden: <input type="hidden"> <!-- 비밀 데이터 전송 시 사용. 화면에 보이지 않음-->
+        <br>reset: <input type="reset"> <!-- 초기화 -->
+
+        <br>
+        <br>
+        <br>
+
+        <!-- 많이 사용하는 타입들 재정리 -->
+        <br>button: <button type="button" name="btn_ok">here</button>
+        <br>checkbox: <input type="checkbox">
+        <br>file: <input type="file">
+        <br>hidden: <input type="hidden">
+        <br>password: <input type="password">
+        <br>radio: <input type="radio">
+        <br>range: <input type="range">
+        <br>text: <input type="text">
+
+        <!-- 많이 쓰임. 라디오버튼과 기능 동일 -->
+        <br><select name="" id=""> 
+            <option>남</option>
+            <option>여</option>
+            <option>기타</option>
+        </select>
+
+        <!-- 많이 쓰임. 보통 기능이 탑재된 웹 에디터로 사용한다. 예> CK Editor(가장 유명), Toast Editor -->
+        <br><textarea name="" id ="">
+여기에 글을 쓰시오...
+        </textarea>
+    </form>
+</body>
+</html>
