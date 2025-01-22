@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+
+    <style>
+        table,tr {
+            border: solid 1px lightgray;
+            border-collapse: collapse;
+            margin : auto;
+        }
+
+        td {
+            padding: 2px 10px 2px 10px; /*상 우 하 좌 - 시계방향*/
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="">
+        <table width="55%">
+            <tr height="40px">
+                <td size="20" style="text-align: right;"><b><span style="color: red;">*</span>아이디</b></td>
+                <td>
+                    <input type="text" size="20">
+                    <button type="button|submit|reset" style="background-color: black; color: white;">아이디중복체크</button>
+                </td>
+            </tr>
+            <tr height="40px">
+                <td style="text-align: right;"><b><span style="color: red;">*</span>비밀번호</b></td>
+                <td><input type="password" size="20"></td>
+            </tr>
+            <tr height="130px">
+                <td style="text-align: right; vertical-align:top;"><b><span style="color: red;">*</span>비밀번호확인</b></td>
+                <td>
+                    <input type="password" size="20"><br>
+                    <p>
+                        <span style="color: rgb(215, 25, 25);">
+                            <b>비밀번호는 10-20자 영문자로 시작하고 숫자 또는 영문 대 소문자로 조합된 문자열이어야 합니다.<br>
+                            ex)1111,aaaa,AAAA,****등 등록 불가합니다.</b>
+                        </span><br>
+                        <span style="color: grey;">
+                            비밀번호를 변경하실 경우에는 비밀번호란과 비밀번호확인란에 변경하시는 번호를 새로 입력하시면 변경됩니다.
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr height="40px">
+                <td style="text-align: right;"><b><span style="color: red;">*</span>이름</b></td>
+                <td><input type="text" size="20"></td>
+            </tr>
+            <tr height="40px">
+                <td style="text-align: right;"><b><span style="color: red;">*</span>생년월일</b></td>
+                <td>
+                    <input type="text" size="6">년
+                    <input type="text" size="3">월
+                    <input type="text" size="3">일
+                    <input type="radio" name="birth" checked>양력
+                    <input type='radio' name="birth">음력
+                </td>
+            </tr>
+            <tr height="40px">
+                <td size="20" style="text-align: right;"><b><span style="color: red;">*</span>이메일</b></td>
+                <td>
+                    <input type="email" size="29">
+                    <button type="button|submit|reset" style="background-color: black; color: white;">메일중복확인</button>
+                </td>
+            </tr>
+            <tr height="65px">
+                <td size="20" style="text-align: right;"><b>주소</b></td>
+                <td>
+                    <input type="text" size="5">
+                    (<input type="text" size="2">
+                    -&nbsp;<input type="text" size="2">)
+                    <button type="button|submit|reset" style="background-color: black; color: white;">우편번호검색</button>
+                    <br><input type="text" size="39">
+                    <input type="text" size="39">
+                </td>
+            </tr>
+            <tr height="55px">
+                <td size="20" style="text-align: right;"><b><span style="color: red;">*</span>핸드폰</b></td>
+                <td>
+                    <input type="number" size="3">
+                    -&nbsp;<input type="number" size="3">
+                    -&nbsp;<input type="number" size="3">
+                    <input type="checkbox"><span style="font-size: 12px; color: rgb(34, 34, 210);">광고성 정보 이벤트 SMS 수신</span>
+                    <br>
+                    <span style="font-size: 12px; color: rgb(215, 25, 25);">
+                        ※ 주문 관련 정보 등 주요 안내 사항은 수신 동의 여부에 관계없이 자동 발송됩니다.
+                    </span>
+                </td>
+            </tr>
+            <tr height="40px">
+                <td size="20" style="text-align: right;"><b><span style="color: red;">*</span>전화번호</b></td>
+                <td>
+                    <input type="number" size="3">
+                    -&nbsp;<input type="number" size="3">
+                    -&nbsp;<input type="number" size="3">
+                </td>
+            </tr>
+        </table>  
+        <br>
+        <div style="text-align: center;">
+            <button type="button|submit|reset" 
+                style="background-color: rgb(242, 238, 238); 
+                    border: solid 1px rgb(242, 238, 238); 
+                    color: rgb(215, 25, 25); 
+                    padding: 7px 13px;">
+                <b>회원가입</b>
+            </button>
+            <button type="button|submit|reset" 
+                style="background-color: rgb(242, 238, 238); 
+                    border: solid 1px rgb(242, 238, 238); 
+                    color: black; padding: 7px 13px;">
+                <b>이전으로</b>
+            </button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연락처 추가</title>
+    <style>
+        table {
+            border-top: solid 1px rgb(242, 240, 240);
+            border-bottom: solid 1px rgb(242, 240, 240);
+            font-size: 13px;
+            padding: 20px 0 7px 0; /*상 우 하 좌 - 시계방향*/
+            margin : auto;
+        }
+
+        input {
+            border: solid 1px rgb(179, 178, 178);
+        }
+
+        input::placeholder {
+            color: rgb(179, 178, 178);
+        }
+
+        button {
+            border: solid 1px rgb(179, 178, 178);  
+            background-color: white; 
+        }
+
+        textarea {
+            border: solid 1px rgb(179, 178, 178);  
+            resize: none;
+            width: 305px;
+            overflow-y:scroll;
+        }
+        #aaa {
+            float: left;
+            text-align: right;
+            width: 53%;
+		}
+        #bbb {
+            float: right;
+            text-align: center;
+            width: 47%;
+		}
+    </style>
+</head>
+<body>
+    <form method="post" action="">
+        <h4 style="text-align: center;">연락처 추가</h4>
+        <table width="450px">
+            <tr height="25px">
+                <td width="80px" rowspan="2">
+                    <button type="button|submit|reset" style="border: none; background-color: white;">
+                        <img src="./image/profile.PNG">
+                    </button>
+                </td>
+                <td width="10px" rowspan="2" style="color: rgb(179, 178, 178); vertical-align: top;">☆</td>
+                <td>
+                    <input type="text" placeholder="성" size="2">
+                    <input type="text" placeholder="이름" size="5">
+                    <button type="button|submit|reset">상세입력</button>
+                </td>
+            </tr>   
+            <tr height="25px">
+                <td>
+                    <input type="text" placeholder="네이버아이디" size="13">
+                    <input type="text" placeholder="닉네임" size="13">
+                </td>
+            </tr>
+            <tr height="35px">
+                <td colspan="2"><b>전화번호</b></td>
+                <td>
+                    <select name="" id="" style="width: 100px;"> 
+                        <option>휴대폰</option>
+                        <option>유선전화</option>
+                        <option>기타</option>
+                    </select>
+                    <input type="text" placeholder="전화번호" size="25">
+                    <button type="button|submit|reset" style="float: right;">+</button>
+                </td>
+            </tr>  
+            <tr height="35px">
+                <td colspan="2"><b>이메일</b></td>
+                <td>
+                    <input type="text" placeholder="이메일" size="40">
+                    <button type="button|submit|reset" style="float: right;">+</button>
+                </td>
+            </tr>   
+            <tr height="35px">
+                <td colspan="2"><b>그룹</b></td>
+                <td>
+                    <button type="button|submit|reset">그룹설정</button>
+                    &nbsp;<span style="font-size: 12px; color: rgb(179, 178, 178);">그룹을 설정해 주세요</span>
+                </td>
+            </tr>  
+            <tr height="35px">
+                <td colspan="2"><b>생일ㆍ기념일</b></td>
+                <td>
+                    <select name="" id="" style="width: 80px;"> 
+                        <option>생일</option>
+                        <option>기념일</option>
+                    </select>
+                    <input type="text" placeholder="yyyymmdd" size="13">
+                    <input type="radio" name="birth" checked>양력
+                    <input type='radio' name="birth">음력
+                    <button type="button|submit|reset" style="float: right;">+</button>
+                </td>
+            </tr>  
+            <tr height="35px">
+                <td colspan="2"><b>회사ㆍ소속</b></td>
+                <td>
+                    <input type="text" placeholder="회사" size="10">
+                    <input type="text" placeholder="부서" size="9">
+                    <input type="text" placeholder="직책" size="9">
+                    <button type="button|submit|reset" style="float: right;">+</button>
+                </td>
+            </tr>   
+            <tr height="25px">
+                <td colspan="2"><b>주소</b></td>
+                <td>
+                    <select name="" id="" style="width: 80px;"> 
+                        <option>회사</option>
+                        <option>집</option>
+                    </select>
+                    <input type="text" size="2">
+                    -&nbsp;<input type="text" size="2">
+                    <button type="button|submit|reset">우편번호</button>
+                    <button type="button|submit|reset" style="float: right;">+</button>
+                </td>
+            </tr>
+            <tr height="25px">
+                <td colspan="2"></td>
+                <td>
+                    <textarea name="" id ="" placeholder="주소"></textarea>
+                </td>
+            </tr>
+            <tr height="35px">
+                <td colspan="2"><b>홈페이지</b></td>
+                <td>
+                    <input type="text" placeholder="http://" size="40">
+                    <button type="button|submit|reset" style="float: right;">+</button>
+                </td>
+            </tr>  
+            <tr height="35px">
+                <td colspan="2"><b>메신저ㆍSNS</b></td>
+                <td>
+                    <select name="" id="" style="width: 100px;"> 
+                        <option>Line</option>
+                        <option>KakaoTalk</option>
+                        <option>Instagram</option>
+                        <option>Thread</option>
+                        <option>Facebook</option>
+                    </select>
+                    <input type="text" placeholder="메신저주소" size="25">
+                    <button type="button|submit|reset" style="float: right;">+</button>
+                </td>
+            </tr>   
+            <tr height="35px">
+                <td colspan="2"><b>주소</b></td>
+                <td>
+                    <textarea name="" id ="" placeholder="메모 (최대 1,000자)"></textarea>
+                </td>
+            </tr>  
+            <tr>
+                <td colspan="3"
+                    style="text-align: center; 
+                    font-size: 13px; color: grey; 
+                    border-top: solid 1px rgb(242, 240, 240);
+                    padding: 7px 0 0 0;">
+                    자세히 입력하기 ▲
+                </td>
+            </tr>
+        </table>
+        <br>
+        <div id="aaa">
+            <button type="button|submit|reset" style="padding: 5px 6px;"><b>저장</b></button>
+            <button type="button|submit|reset" style="padding: 5px 6px;"><b>취소</b></button>
+        </div>
+        <div id="bbb">
+            <button type="button|submit|reset" style="padding: 5px 6px;"><b>저장 후 계속 추가 ▶</b></button>
+        </div>
+    </form>    
+</body>
+</html>
