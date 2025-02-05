@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for (let i = 1; i <= 3; i++) {
+        //     alert(i);
+        // } 
+        
+        // var sum = 0;
+
+        // for (let i = 1; i <= 10; i++) {
+        //     sum += i;
+        // } 
+
+        // alert(sum);
+
+        // for (let i = 2; i <= 9; i++) {
+        //     for (let j = 1; j <= 9; j++) {
+        //         console.log(i + " * " + j + " = " + (i * j));
+        //     }
+
+        //     console.log("-------------");
+        // }
+
+        // for (let i = 2; i <= 2; i++) {
+        //     for (let j = 1; j <= 9; j++) {
+        //         if (j % 2 == 0) {
+        //             console.log(i + " * " + j + " = " + (i * j));
+        //         }
+        //     }
+
+        //     console.log("-------------");
+        // }
+
+        for (let i = 1; i <= 5; i++) {
+            var star = "";
+
+            for (let j = 1; j <= i; j++) {
+                star += "*";
+            }
+            
+            console.log(star + i);
+        }
+
+        var last = 9;
+
+        for (let i = 1; i <= last; i++) {
+            if (i % 2 == 1) {
+                var star = "";
+
+                for (let j = 1; j <= ((last - i) / 2); j++) {
+                    star += " ";
+                }
+
+                for (let j = 1; j <= i; j++) {
+                    star += "*";
+                }
+                
+                console.log(star);
+            }
+        }
+
+        last = 5;
+
+        for (let i = 1; i <= last; i++) {
+            var star = "";
+
+            for (let j = 1; j <= (last - i); j++) {
+                star += " ";
+            }
+
+            for (let j = 1; j <= i; j++) {
+                star += "*";
+            }
+
+            console.log(star);
+        }
+    </script>
+</body>
+</html>
