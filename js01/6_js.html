@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // js는 함수명이 달라야 한다. (오버 로딩 안됨)
+        function abc1() {
+            alert("abc");
+        }
+        abc1();
+
+        function abc2(a) {
+            alert(a);
+        }
+        abc2(123);
+
+        function abc3(a, b) {
+            alert(a + "|" + b);
+        }
+        abc3(123, 456);
+
+        function sum(a, b) {
+            return a + b;
+        }
+
+        function subtraction(a, b) {
+            return a - b;
+        }
+
+        function multiplication(a, b) {
+            return a * b;
+        }
+
+        function division(a, b) {
+            return a / b;
+        }
+
+        var result_sum = sum(123, 456);
+        alert(result_sum);
+
+        var result_subtraction = subtraction(123, 456);
+        alert(result_subtraction);
+
+        var result_multiplication = multiplication(123, 456);
+        alert(result_multiplication);
+
+        var result_division = division(123, 456);
+        alert(result_division);
+    </script>
+</body>
+</html>
